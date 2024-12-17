@@ -1,0 +1,140 @@
+/* fonts */
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v22-latin-300.woff2') format('woff2'),
+        url('../fonts/poppins-v22-latin-300.woff') format('woff')
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v22-latin-regular.woff2') format('woff2'),
+        url('../fonts/poppins-v22-latin-regular.woff') format('woff')
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v22-latin-600.woff2') format('woff2'),
+        url('../fonts/poppins-v22-latin-600.woff') format('woff')
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins-v22-latin-900.woff2') format('woff2'),
+        url('../fonts/poppins-v22-latin-900.woff') format('woff')
+}
+
+/* base style */
+:root {
+    --color-primery-dark: #31261A;
+    --color-primery-light: #FAF4EA;
+    --color-green-dark: #465929;
+    --color-green-light: #819B57;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Poppint", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-primery-dark);
+    background-color: #f1dbb5;
+}
+
+ul {
+    list-style-type: none
+}
+
+a {
+    text-decoration: none;
+}
+
+/* main styles */
+.container {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+/* Menu Navigations */
+.navLink {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-primery-light);
+    text-transform: capitalize;
+}
+
+.navLink:hover {
+    font-weight: 600;
+    color: var(--color-green-light);
+}
+
+
+/* Header Styles */
+.headerSection {
+    padding: 32px 0;
+}
+
+.headerWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.mainLogo {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--color-primery-light);
+    text-transform: uppercase;
+}
+
+.mainLogo span {
+    display: block;
+    font-weight: bold;
+}
+
+.navWrap {
+    display: flex;
+    align-items: center;
+}
+
+.navList {
+    display: flex;
+}
+
+.navList li {
+    display: flex;
+    cursor: pointer;
+}
+
+.navList li:not(:last-child) {
+    padding-right: 56px;
+}
+
+
+
+/* Header Button */
+.btnOrder {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--color-primery-light);
+    background-color: var(--color-green-light);
+    border-radius: 8px;
+    padding: 16px 32px;
+    border: none;
+    cursor: pointer;
+}
