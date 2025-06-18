@@ -138,3 +138,44 @@ a {
     border: none;
     cursor: pointer;
 }
+
+/* main section */
+
+.mainSection {}
+
+.mainTitle {}
+
+.mainTitle h1 {
+    font-size: 128px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--color-primery-light);
+}
+
+.mainTitle h1 span {
+    font-size: 128px;
+    font-weight: 900;
+    color: var(--color-green-light);
+}
+
+.container {}
+
+.footerMainSection {
+    padding: 15px 0;
+    background-color: var(--color-green-light);
+}
+
+.mainSecList {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.mainSecList li {
+    font-size: 20px;
+    font-weight: 200;
+    color: var(--color-primery-light);
+}
