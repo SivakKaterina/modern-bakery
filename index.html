@@ -1,195 +1,326 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Bakery</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container _container">
+          <div class="header__logo">
+            <a href="index.html">shop <span>bakery</span></a>
+          </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern bakery</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open menu"
+          >
+            <svg
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
 
-<body>
-    <header class="headerSection">
-        <div class="container">
-            <div class="headerWrap">
-                <a class="mainLogo" href="#">shop <span>bakery</span></a>
-                <nav class="navWrap">
-                    <ul class="navList">
-                        <li><a class="navLink" href="#traditions">our traditions</a></li>
-                        <li><a class="navLink" href="#chefs">chefs</a></li>
-                        <li><a class="navLink" href="#formats">formats</a></li>
-                        <li><a class="navLink" href="#contacts">contacts</a></li>
-                    </ul>
-                </nav>
-                <button class="btnOrder">Order a call</button>
-            </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#traditions" class="header__nav-link"
+                  >our traditions</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a href="#chefs" class="header__nav-link">chefs</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#formats" class="header__nav-link">formats</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#contacts" class="header__nav-link">contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__cta">order a call</button>
         </div>
-    </header>
-    <main>
-        <section>
-            <div class="mainSection">
-                <div class="mainTitle">
-                    <div class="container">
-                        <h1><span>Modern</span> bakery</h1>
-                    </div>
-                </div>
-                <div class="footerMainSection">
-                    <div class="container">
-                        <ul class="mainSecList">
-                            <li>Great demand on the market</li>
-                            <li>Budget-friendly formats</li>
-                            <li>Experienced management team</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      </header>
+      <main class="page">
+        <section class="hero">
+          <div class="hero__container _container">
+            <h1 class="hero__title"><span>Modern</span> bakery</h1>
+            <a href="#" class="hero__cta">order now</a>
+          </div>
         </section>
-        <section id="traditions">
-            <div class="container">
-                <div class="leftWrap">
-                    <h2>A new format of traditions</h2>
-                    <p><span>shop bakery</span> — this is a bakery that took all the best and kept the taste of
-                        traditional
-                        baking and
-                        the naturalness of the ingredients.</p>
-                    <p>We work as the most famous networks—
-                        <span>5 ​​minutes and the order is ready</span>.
-                        And our bakeries have a stylish design
-                        and high quality service!
-                    </p>
-                </div>
-                <div class="rightWrap">
-                    <img src="./images/index-page/Сhef-with-bread.png"
-                        alt="Baker looking at trays of bread and smiling">
-                </div>
-            </div>
-        </section>
-        <section id="chefs">
-            <div class="container">
-                <div class="titleSection">
-                    <h2>Our best chief cooks</h2>
-                </div>
-                <div class="contentChiefSection">
-                    <div>
-                        <div><img src="./images/index-page/Chef-Anastasia.png" alt="Nastya's photo"></div>
-                        <div>
-                            <h3>Nastya</h3>
-                            <p>Hello, I'm Nastya!</p>
-                            <p>For 10 years, I've been lighting
-                                interesting and tasty ideas in life.</p>
-                            <p>I will bake for you
-                                the most delicious products!</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div><img src="./images/index-page/Chef-Vlad.png" alt="Vlad's photo"></div>
-                        <div>
-                            <h3>Vlad</h3>
-                            <p>Hello, I'm Vlad!</p>
-                            <p>I have 18 years of coding experience. SHOP BAKERY is our love, which we share with you
-                                every
-                                time
-                                through our pastries!</p>
-                            <p>I will make a unique filling for you for any taste!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="formats">
-            <div class="titleSection">
-                <h2>Formats</h2>
-            </div>
-            <div class="contentFormatsSection">
-                <div>
-                    <img src="./images/index-page/walrus-image.png" alt="Сashier area in Walrus">
-                    <h3>Walrus</h3>
-                    <ul>
-                        <li>Area: up to 120 m2</li>
-                        <li>Menu: advanced menu</li>
-                        <li>Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2 general waiters</li>
-                        <li>Seats: there are</li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="./images/index-page/horseshoe-image.png" alt="Сashier area in Horseshoe">
-                    <h3>Horseshoe</h3>
-                    <ul>
-                        <li>Area: up to 25 m2</li>
-                        <li>Menu: the most popular menu items</li>
-                        <li>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</li>
-                        <li>Seats: none</li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="./images/index-page/handlebar-image.png" alt="Сashier area in Handlebar">
-                    <h3>Handlebar</h3>
-                    <ul>
-                        <li>Area: up to 15 m2</li>
-                        <li>Menu: the most popular menu items</li>
-                        <li>Staff: 1 salesperson, 1 baker, 1 baker's assistant</li>
-                        <li>Seats: none</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section id="contacts">
-            <div class="container">
-                <div class="leftWrapContact">
-                    <div class="titleSection">
-                        <h2>Join the
-                            chain of bakeries</h2>
-                        <p>Fill out the form so we can contact you!</p>
-                        <div>
-                            <!-- contact form -->
-                        </div>
-                    </div>
-                </div>
-                <div class="rightWrapContact">
-                    <div>
-                        <!-- map -->
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <div>
-                <a href="#">shop bakery</a>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#">franchise</a></li>
-                    <li><a href="#chefs">chefs</a></li>
-                    <li><a href="#formats">formats</a></li>
-                    <li><a href="#contacts">contacts</a></li>
-                </ul>
-            </div>
-            <div>
-                <address>
-                    <ul>
-                        <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-                        <li><a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
-                        <li><a href="#" target="_blank">Ukraine, Kyiv,<br>
-                                St. 54 of Sichovyh Streltsiv</a></li>
-                    </ul>
-                </address>
-                <ul>
-                    <li>
-                        <a href="#"><img src="./images/icons/facebook-icon.png" alt="Facebook icon"></a>
-                    </li>
-                    <li><a href="#"><img src="./images/icons/instagram-icon.png" alt="Instagram icon"></a></li>
-                </ul>
-            </div>
-            <div>
-                <p> Privacy Policy &copy; 2022 Дані захищені</p>
-            </div>
-
+        <div class="advantages">
+          <div class="advantages__container _container">
+            <ul class="advantages__list">
+              <li class="advantages__item">Great demand on the market</li>
+              <li class="advantages__item">Budget-friendly formats</li>
+              <li class="advantages__item">Experienced management team</li>
+            </ul>
+          </div>
         </div>
+        <section class="traditions" id="traditions">
+          <div class="traditions__container _container">
+            <h2 class="traditions__title">A new format of traditions</h2>
+            <p class="traditions__text">
+              <span>shop bakery</span>— this is a bakery that took all the best
+              and kept the taste of traditional baking and the naturalness of
+              the ingredients.
+            </p>
+            <p class="traditions__text">We work as the most famous networks—
+              <span>5 ​​minutes and the order is ready</span>. And our bakeries
+              have a stylish design and high quality service!
+            </p>
+            <div class="traditions__image">
+              <img
+                src="./images/index-page/Сhef-with-bread.png"
+                alt="Baker looking at trays of bread and smiling"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="chefs" id="chefs">
+          <div class="chefs__container _container">
+            <h2 class="chefs__title">Our best chief cooks</h2>
+            <div class="chefs__box">
+              <div class="chefs__item">
+                <img
+                  src="./images/index-page/Chef-Anastasia.png"
+                  alt="Nastya's photo"
+                />
+                <div class="chefs__info">
+                  <h3 class="chefs__name">Nastya</h3>
 
-    </footer>
+                  <p class="chefs__text"">Hello, I'm Nastya!</p>
 
-</body>
+                  <p class="chefs__text">
+                    For 10 years, I've been lighting interesting and tasty ideas
+                    in life.
+                  </p>
 
+                  <p class="chefs__text">
+                    I will bake for you the most delicious products!
+                  </p>
+                </div>
+              </div>
+              <div class="chefs__item">
+                <img
+                  src="./images/index-page/Chef-Vlad.png"
+                  alt="Vlad's photo"
+                />
+                <div class="chefs__info">
+                  <h3 class="chefs__name">Vlad</h3>
+
+                  <p class="chefs__text">Hello, I'm Vlad!</p>
+
+                  <p class="chefs__text">
+                    I have 18 years of coding experience. SHOP BAKERY is our
+                    love, which we share with you every time through our
+                    pastries!
+                  </p>
+
+                  <p class="chefs__text">
+                    I will make a unique filling for you for any taste!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="formats" id="formats">
+          <div class="formats__container _container">
+            <h2 class="formats__title">Formats</h2>
+            <div class="formats__box">
+              <div class="formats__item">
+                <img
+                  src="./images/index-page/walrus-image.png"
+                  alt="Сashier area in Walrus"
+                />
+                <h3 class="formats__name">Walrus</h3>
+                <ul class="formats__list">
+                  <li class="formats__list-item">Area: up to 120 m2</li>
+                  <li class="formats__list-item">Menu: advanced menu</li>
+                  <li class="formats__list-item">
+                    Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2 general
+                    waiters
+                  </li>
+                  <li class="formats__list-item">Seats: there are</li>
+                </ul>
+              </div>
+              <div class="formats__item">
+                <img
+                  src="./images/index-page/horseshoe-image.png"
+                  alt="Сashier area in Horseshoe"
+                />
+                <h3 class="formats__name">Horseshoe</h3>
+                <ul class="formats__list">
+                  <li class="formats__list-item">Area: up to 25 m2</li>
+                  <li class="formats__list-item">
+                    Menu: the most popular menu items
+                  </li>
+                  <li class="formats__list-item">
+                    Staff: 2 cashiers, 2 bakers, 1 baker's assistant
+                  </li>
+                  <li class="formats__list-item">Seats: none</li>
+                </ul>
+              </div>
+              <div class="formats__item">
+                <img
+                  src="./images/index-page/handlebar-image.png"
+                  alt="Сashier area in Handlebar"
+                />
+                <h3 class="formats__name">Handlebar</h3>
+                <ul class="formats__list">
+                  <li class="formats__list-item">Area: up to 15 m2</li>
+                  <li class="formats__list-item">
+                    Menu: the most popular menu items
+                  </li>
+                  <li class="formats__list-item">
+                    Staff: 1 salesperson, 1 baker, 1 baker's assistant
+                  </li>
+                  <li class="formats__list-item">Seats: none</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts" id="contacts">
+          <div class="contacts__container _container">
+            <h2 class="contacts__title">Join the chain of bakeries</h2>
+            <p class="contacts__text">
+              Fill out the form so we can contact you!
+            </p>
+            <div class="contacts__body">
+              <form class="contacts__form" action="#">
+                <input
+                  class="contacts__input"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                />
+
+                <input
+                  class="contacts__input"
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone"
+                />
+
+                <input
+                  class="contacts__input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+
+                <button class="contacts__button" type="submit">
+                  Request a call
+                </button>
+
+                <p class="contacts__policy">
+                  By clicking the button, I agree to the
+                  <a href="#" class="contacts__policy-link">Privacy Policy</a>
+                </p>
+              </form>
+
+              <div class="contacts__map">
+                <iframe
+                  class="contacts__map-frame"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163447036217!2d30.488698377573133!3d50.456680986913824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2sde!4v1780394499789!5m2!1suk!2sde"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container _container">
+          <div class="footer__logo">
+            <a href="#" class="footer__logo-link"> shop bakery </a>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">franchise</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#chefs" class="footer__nav-link">chefs</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#formats" class="footer__nav-link">formats</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#contacts" class="footer__nav-link">contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="footer__contacts">
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-item">
+                <a href="tel:+380960000007" class="footer__contacts-link">
+                  +38 (096) 000 00 07
+                </a>
+              </li>
+
+              <li class="footer__contacts-item">
+                <a
+                  href="mailto:shopbakery@gmail.com"
+                  class="footer__contacts-link"
+                >
+                  shopbakery@gmail.com
+                </a>
+              </li>
+
+              <li class="footer__contacts-item">
+                <a href="#" target="_blank" class="footer__contacts-link">
+                  Ukraine, Kyiv, St. 54 of Sichovyh Streltsiv
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <img src="./images/icons/facebook-icon.png" alt="Facebook" />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <img src="./images/icons/instagram-icon.png" alt="Instagram" />
+              </a>
+            </li>
+          </ul>
+          <div class="footer__bottom">
+            <p class="footer__copyright">
+              Privacy Policy &copy; 2022 Data is protected
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
 </html>
